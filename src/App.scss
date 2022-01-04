@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    background: black;
+}
+
+#root {
+    width:  100vw;
+    margin: auto;
+
+    .result {
+        height: 280px;
+        background: black;
+        width: 80%;
+        margin: auto;
+
+        .resultValue {
+            text-align:  end;
+            height: 280px;
+            font-size: 70px;
+            color: white;
+            line-height: 670%;
+        }
+    }
+    .button-wrapper {
+        display: flex;
+        justify-content: center;
+        background: black;
+        height: 100%;
+        // align-items: center;
+
+        button {
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            margin: 4px;
+            background: #555;
+            border: none;
+            color: white;
+            font-size: 25px;
+            padding: 0;
+
+            &:hover {
+                background: #999;
+            }
+            &:focus{
+                outline: none;
+            }
+        }
+        .operator {
+            display: flex;
+            flex-direction: column;
+
+            button {
+                background: orange;
+                &:hover {
+                    background: #ffc7af;
+                }
+                &:focus {
+                    background: white;
+                    color: orange;
+                }
+            }
+        }
+    }
+}
